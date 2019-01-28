@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<style>
+		body {
+			font: 12px/150% Arial, Verdana, "\5b8b\4f53";
+			color: #666;
+		}
+         a{
+			 text-decoration: none;
+		 }
+		.login {
+			position: relative;
+			width: 990px;
+			height: 80px;
+			left: 18%
+		}
+
+		.login a {
+			text-decoration: none;
+		}
+
+		#logo {
+			position: relative;
+			width: 300px;
+			height: 60px;
+			float: left;
+		}
+
+		#welcome {
+			font-size: 25px;
+			color: #000000;
+		}
+
+		.query_link {
+			position: relative;
+			float: right;
+			top: 52px;
+		}
+
+		#logo b {
+			display: block;
+			width: 110px;
+			height: 40px;
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			background: url(loginImage/l-icon.png) no-repeat;
+		}
+
+		.query_link b {
+			position: absolute;
+			width: 18px;
+			height: 14px;
+			right: 110px;
+			background: url(loginImage/q-icon.png) no-repeat;
+		}
+		#content{
+			width: 100%;
+			background: #fff8f0;
+            text-align:center;
+			padding-top:1px;
+			padding-bottom: 1px;
+		}
+		.tip_wraper{
+			width: 90%;
+			text-align:center;
+		}
+		.icon_tip{
+			position: absolute;
+			width: 16px;
+			height: 16px;
+			background: url(loginImage/icon-tips.png) no-repeat;
+			left: 280px;
+			vertical-align: middle;
+		    
+		}
+		.login_wrapper{
+			position: relative;
+			width: 100%;
+			height: 475px;
+			background: #9a1d21;
+		}
+		#login_banner{
+			position:absolute;
+			width: 990px;
+			height: 475px;
+			right:18% ;
+			background: url(loginImage/JDbanner.jpg) no-repeat;
+		}
+		#login_form{
+			margin-top: 10px;
+			width: 346px;
+			height: 400px;
+			background: #fff;
+			float: right;
+		}
+		.icon_tips{
+			position: absolute;
+			width: 16px;
+			height: 16px;
+			background: url(loginImage/icon-tips.png) no-repeat;
+			vertical-align: middle;
+			right: 311px;
+		}
+		.tips_content{
+			text-align: center;
+			margin-left: 30px;
+		}
+		#select_title{
+			width: 100%;
+		}
+		.login_tab{
+			text-align: center;
+			width: 172.2px;
+			float: left;	
+			border-bottom: 1px solid #f4f4f4;
+		}
+		.login_tab h2{
+			cursor: pointer;
+		}
+		.wrapper_gap{
+			width: 100%;
+			height: 85px;
+		}
+		#form_input{
+		   margin-left: 20px;
+		   margin-right: 20px;
+		   position: relative;
+		}
+		.form_label{
+			width: 38px;
+			height: 38px;
+			position: absolute;
+			left: 0px;
+			border: 1px solid #bdbdbd;
+		}
+		.name_label{
+			
+			background: url(loginImage/pwd-icons-new.png) no-repeat;
+			background-position: 0 0;
+			
+		}
+		.item{
+			width: 302px;
+			height: 60px;
+			
+		}
+		.intx{
+			width: 258px;
+			height: 34px;
+			float: right;
+			font-size: 13px;
+		    
+		}
+		.psw_label{
+			background: url(loginImage/pwd-icons-new.png) no-repeat;
+			background-position: -48px 0;
+		}
+		#forget_psw {
+		    text-align: right;
+			height: 40px;
+		}
+		#login_btn{
+			width: 302px;
+			height: 33px;
+			background: #e4393c;
+			position: relative;
+			
+		    
+		}
+		#login_btn a{
+			position: absolute;
+			left: 124px;
+			top: 8px;
+			color: white;
+			font-family: 'Microsoft YaHei';
+			font-size: 20px;
+		}
+		#login_footer{
+			position: relative;
+			margin-left: 20px;
+			margin-right: 20px;
+			width: 302px;
+		}
+		#login_footer ul{
+			list-style: none;
+			margin-top: 45px;
+			border-top: 1px solid #f4f4f4;
+			
+		}
+		#login_footer ul li{
+			float: left;
+		}
+		#login_footer .qq_link {
+			position: absolute;
+			width: 19px;
+			height: 18px;
+			background: url(loginImage/QQ-weixin.png) no-repeat;
+			background-position: 0 0;
+		}
+		#login_footer .wechat_link {
+			position: absolute;
+			width: 19px;
+			height: 18px;
+			background: url(loginImage/QQ-weixin.png) no-repeat;
+			background-position: -20px 0;
+		}
+	
+		.extract b{
+			position: absolute;
+			width: 16px;
+			height: 16px;
+			background: url(loginImage/pwd-icons-new.png) no-repeat;
+			background-position: -104px -75px ;
+		}
+		footer div{
+		   text-align: center;
+		}
+		
+		#link{
+			position: relative;
+		}
+		#link  ul{
+			position: absolute;
+			list-style: none;
+			left: 326px;
+		}
+		#link  ul li{
+			float: left;
+		}
+		#copyRight{
+			margin-top: 16px;
+		}
+	</style>
+	<body>
+		<div class="login">
+			<div id="logo">
+				<a>
+					<img src="loginImage/logo-201305-b.png" />
+				</a>
+				<b></b>
+			</div>
+			<a href="/" class="query_link"><b></b>登录页面，问卷调查</a>
+		</div>
+		<div id="content">
+			<div class="tip_wraper">
+				<div class="tip_inner">
+					<i class="icon_tip"></i>
+					<p>依据《网络安全法》，为保障您的账户安全和正常使用，请尽快完成手机号验证！ 新版《京东隐私政策》已上线，将更有利于保护您的个人隐私。</p>
+				</div>
+			</div>
+			<div class="login_wrapper">
+				<div id="login_banner">
+					<div id="login_form">
+						<div class="tip_wraper">
+							<div class="tips_content">
+							<div class="tip_inner">
+								<i class="icon_tips"></i>
+								<p>京东不会以任何理由要求您转账汇款，谨防诈骗。</p>
+							</div>
+							</div>
+						</div>
+							<div class="login_tab"><h2>用户登录</h2></div>
+							<div class="login_tab"><h2>扫码登录</h2></div>
+							<div class="wrapper_gap"></div>
+							<div id="form_input">
+								<form>
+								<div class="item">
+									<label for="loginname" class="name_label form_label"></label>
+									<input type="text" class="intx" id="loginnname" placeholder=" 邮箱/用户名/已验证的手机"/>
+								</div>
+								<div class="item">
+									<label for="login_psw" class="psw_label form_label"></label>
+									<input type="text" class="intx" id="login_psw" placeholder=" 密码"/>
+								</div>
+								<div id="forget_psw"><a href="/">忘记密码？</a></div>
+								<div></div>
+								<div id="login_btn"><a href="/">登&nbsp;&nbsp;&nbsp;&nbsp;录</a></div>
+								</form>
+							</div>
+							<div id="login_footer">
+								<ul>
+								<li>
+										<a href="../">
+											<b class="qq_link" style="margin-left: -39px;"></b>
+											<span style="margin-left: -13px;">QQ</span>
+										</a>
+									</li>
+									<li style="margin-left: 9px;" >|</li>
+									<li>
+										<a href="../">
+											<b class="wechat_link" style="margin-left: 9px;"></b>
+											<span style="margin-left: 35px;">微信</span>
+										</a>
+									</li>
+									<li class="extract">
+										<a href="../">
+											<b style="margin-left: 118px;"></b>
+											<span style="margin-left: 136px;">立即注册</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		<footer>
+        <div id="link">
+			<ul>
+				<li><a href="/">关于我们</a>&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+				<li><a href="/">联系我们</a>&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+				<li><a href="/">人才招聘</a>&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+				<li><a href="/">商家入驻</a>&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+				<li><a href="/">广告服务</a>&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+				<li><a href="/">手机京东</a>&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+				<li><a href="/">友情链接</a>&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+				<li><a href="/">销售联盟</a>&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+				<li><a href="/">京东社区</a>&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+				<li><a href="/">京东公益</a>&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+				<li><a href="/">English Site</a></li>
+			</ul>
+			</div><br/>
+				<div id="copyRight">Copyright&nbsp;©&nbsp;2004-2019&nbsp;&nbsp;京东JD.com 版权所有</div>
+		</footer>
+	</body>
+</html>
